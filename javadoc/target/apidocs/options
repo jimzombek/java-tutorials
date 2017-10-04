@@ -1,0 +1,22 @@
+-encoding
+'Cp1252'
+-protected
+-sourcepath
+'C:/eclipse/users/jmzombe/workspace/javadoc/src/main/java;C:/eclipse/users/jmzombe/workspace/javadoc/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2016. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/eclipse/users/jmzombe/workspace/javadoc/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'javadoc 0.0.1-SNAPSHOT API'
+-linkoffline
+'http://docs.oracle.com/javase/8/docs/api' 'C:/eclipse/users/jmzombe/workspace/javadoc/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'javadoc 0.0.1-SNAPSHOT API'
