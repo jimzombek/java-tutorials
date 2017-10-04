@@ -1,0 +1,6 @@
+2016-08-29 15:27:35.624 [main] DEBUG com.jmzombe.log4j2.Logging - Debug
+2016-08-29 15:27:35.625 [main] INFO  com.jmzombe.log4j2.Logging - Info
+2016-08-29 15:27:35.625 [main] WARN  com.jmzombe.log4j2.Logging - Warning
+2016-08-29 15:27:35.625 [main] ERROR com.jmzombe.log4j2.Logging - Error
+2016-08-29 15:27:35.625 [main] FATAL com.jmzombe.log4j2.Logging - Fatal
+2016-08-29 15:27:35.626 [main] TRACE com.jmzombe.log4j2.Logging - Trace
