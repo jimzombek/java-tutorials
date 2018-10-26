@@ -19,7 +19,7 @@ public class SparkFormHandling {
         configuration.setClassForTemplateLoading(SparkFormHandling.class, "/");
 
         // Configure routes
-        Spark.get(new Route("/") {
+        Spark.get("/", new Route() {
             @Override
             public Object handle(final Request request, final Response response) {
                 try {
@@ -35,13 +35,13 @@ public class SparkFormHandling {
                     return writer;
 
                 } catch (Exception e) {
-                    halt(500);
+                    //halt(500);
                     return null;
                 }
             }
         });
 
-        Spark.post(new Route("/favorite_fruit") {
+        Spark.post("/favorite_fruit", new Route() {
             @Override
             public Object handle(final Request request, final Response response) {
                 final String fruit = request.queryParams("fruit");

@@ -16,8 +16,8 @@ public class HelloWorldSparkFreemarkerStyle {
         final Configuration configuration = new Configuration();
         configuration.setClassForTemplateLoading(
                 HelloWorldSparkFreemarkerStyle.class, "/");
-
-        Spark.get(new Route("/") {
+       
+        Spark.get("/", new Route() {
             @Override
             public Object handle(final Request request,
                                  final Response response) {
@@ -29,7 +29,7 @@ public class HelloWorldSparkFreemarkerStyle {
 
                     helloTemplate.process(helloMap, writer);
                 } catch (Exception e) {
-                    halt(500);
+                    //halt(500);
                     e.printStackTrace();
                 }
                 return writer;
