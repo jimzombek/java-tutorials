@@ -229,7 +229,7 @@ public class PooledDataSource {
     	  //   and distinguish between multiple c3p0 DataSources even across application or JVM restarts. dataSourceName 
     	  //   defaults to the pool's configuration name, if a named config was used, or else to an "identity token" (an opaque, 
     	  //   guaranteed unique String associated with every c3p0 DataSource). You may update this property to any name you 
-    	  //   find convenient. dataSourceName is not guaranteed to be unique — for example, multiple DataSource created from
+    	  //   find convenient. dataSourceName is not guaranteed to be unique ï¿½ for example, multiple DataSource created from
     	  //   the same named configuration will share the same dataSourceName. But if you are going to make use of dataSourceName,
     	  //   you will probably want to ensure that all pooled DataSources within your JVM  do have unique names.
     	  String dataSourceName = prop.getProperty(DATA_SOURCE_NAME);
@@ -267,7 +267,7 @@ public class PooledDataSource {
           //   defined for this DataSource. 
           String extensions = prop.getProperty(EXTENSIONS);
           if (extensions != null) {
-        	  cpds.setExtensions(new HashMap());
+        	  cpds.setExtensions(new HashMap<Object, Object>());
           }
     	  
           // PARM - factoryClassLocation
